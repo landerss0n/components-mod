@@ -22,8 +22,8 @@ class Autoloader
 
     private function getComponentsBasePath()
     {
-        $themeDir = get_template_directory();
-        $componentsBasePath = $themeDir.'/'.'components';
+        $themeDir = get_stylesheet_directory();
+        $componentsBasePath = $themeDir.'/'.'component';
 
         return $componentsBasePath;
     }
@@ -36,7 +36,7 @@ class Autoloader
         }
 
         $childThemeDir = get_stylesheet_directory();
-        $childComponentsBasePath = $childThemeDir.'/components';
+        $childComponentsBasePath = $childThemeDir.'/component';
 
         return $childComponentsBasePath;
     }
